@@ -1,0 +1,167 @@
+header{
+
+	background: black;
+	height: 60px;
+	color: white;
+	font-weight: bold;
+}
+.np{
+	padding: 0px !important;
+}
+.logos{
+	height: 40px;
+}
+.ul ul{
+	padding: 0px;
+	margin: 0px;
+}
+li{
+	cursor: pointer;
+}
+.nomics-ticker-widget-footer{
+	display: none !important;
+}
+.ul ul li{
+	display: inline-block;
+	width: 23%;
+}
+header .col-sm-3 ul{
+	width: 100%
+	padding: 0px;
+	margin-left: 15%;
+}
+header .col-sm-3 li{
+	display: inline-block;
+	width: 45%;
+	text-align: center;
+}
+body {
+  font-family: 'Montserrat';
+  font-weight: 600;
+}
+.tstats{
+	background: rgb(240, 242, 247);
+	height: 54px;
+	border-radius: 8px;
+	padding: 4px;
+}
+.leftdiv{
+	padding: 0px 16px;
+	height: 48px;
+	padding-top: 15px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.leftdiv1{
+	padding: 0px 0px 0px 16px;
+	margin-bottom: 10px;
+}
+.leftdiv.active{
+	background: rgb(253 13 13 / 25%);
+	border-radius: 4px;	
+}
+.right{
+	position: absolute;
+	left: 17%;
+	width: 83%
+	; 
+	padding: 16px 30px;
+	overflow-y: scroll;
+	height: 90vh;
+}
+.left{
+	position: absolute;
+	padding: 8px;
+	width: 17%;
+}
+.leftdiv{
+	padding-top: 10px;
+}
+.card{
+	border-radius: 7px;
+}
+.btn {
+
+	background: red;
+	border:transparent;
+}
+
+.border{
+	border: 1px solid rgb(240, 242, 247);
+    border-radius: 8px;
+}
+body{
+	overflow: hidden;
+}
+// mixin
+
+@mixin bp-max($point) {
+	@media (max-width: $point) {
+		@content;
+	}
+}
+
+@mixin bp-maxh($point) {
+	@media (max-height: $point) {
+		@content;
+	}
+}
+
+
+
+.infinite-container{
+  width:100%;
+  display:flex;
+  align-items:center;
+  padding:20px 0;
+ 
+  overflow:hidden;
+}
+
+.infinite-wrapper{
+  white-space:nowrap;
+  width:auto;
+}
+
+.items-block{
+  display:inline-block;
+  white-space:nowrap;
+}
+
+.infinite-item{
+  padding-left:20px;
+  color:black;
+  font-size:25px;
+  text-decoration:none;
+  white-space:nowrap;
+  display:inline;
+  text-transform:uppercase;
+}
+.sideshit{
+	position: absolute;
+	width: 42%;
+	left: 100%;
+	height:100vh;
+	z-index: 900;
+	background: white;
+}
+.sideshit img {
+
+		animation: bouncingLoader 0.6s infinite alternate;
+	}
+	@keyframes bouncingLoader {
+		from {
+			width: 144px;
+			height: 44px;
+			opacity: 1;
+			transform: translate3d(0);
+		}
+		to {
+			width: 144px;
+			height: 44px;
+			opacity: 0.1;
+			transform: translate3d(0, -5rem, 0);
+		}
+	}
+
+	
